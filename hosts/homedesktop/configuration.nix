@@ -26,7 +26,7 @@
   networking.networkmanager.enable = true;
   
   # Disable SSH
-  services.openssh.enable = lib.mkForce false;
+  services.openssh.enable = true;
 
 
   # Set your time zone.

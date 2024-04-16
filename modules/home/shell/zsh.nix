@@ -64,7 +64,10 @@ in
     };
     shellAliases = myAliases;
   };
-
+  initExtraFirst = ''
+      DISABLE_MAGIC_FUNCTIONS=true
+      export "MICRO_TRUECOLOR=1"
+    '';
   programs.zoxide = {
     enable = true;
     enableZshIntegration = true;

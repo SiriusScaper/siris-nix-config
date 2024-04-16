@@ -1,6 +1,6 @@
 {
 
-  description = "Initial Flake";
+  description = "Framework 13 AMD flake";
 
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
