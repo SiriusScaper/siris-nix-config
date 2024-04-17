@@ -12,8 +12,8 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  #boot.loader.systemd-boot.enable = true;
+  #boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "FarScape-One"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -23,14 +23,14 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Enable networking
-  networking.networkmanager.enable = true;
+  #networking.networkmanager.enable = true;
   
   # Disable SSH
   services.openssh.enable = true;
 
 
   # Set your time zone.
-  time.timeZone = "America/Los_Angeles";
+  #time.timeZone = "America/Los_Angeles";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
@@ -52,40 +52,40 @@
   services.xserver.displayManager.defaultSession = "plasma";
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  #services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.xserver.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  #services.xserver.displayManager.sddm.wayland.enable = true;
+  #services.desktopManager.plasma6.enable = true;
 
   #Enable portals for sandboxed apps
-  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-  xdg.portal.config.common.default = "gtk"; 
+  #xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+  #xdg.portal.config.common.default = "gtk";
 
   # Enable OpenGL
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
+  #hardware.opengl = {
+    #enable = true;
+    #driSupport = true;
+    #driSupport32Bit = true;
+  #};
 
   # Load nvidia driver for Xorg and Wayland
-  services.xserver.videoDrivers = ["nvidia"]; # or "nvidiaLegacy470 etc.
+  #services.xserver.videoDrivers = ["nvidia"]; # or "nvidiaLegacy470 etc.
 
-  hardware.nvidia = {
+  #hardware.nvidia = {
 
     # Modesetting is required.
-    modesetting.enable = true;
+    #modesetting.enable = true;
 
     # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
     # Enable this if you have graphical corruption issues or application crashes after waking
     # up from sleep. This fixes it by saving the entire VRAM memory to /tmp/ instead 
     # of just the bare essentials.
-    powerManagement.enable = false;
+    #powerManagement.enable = false;
 
     # Fine-grained power management. Turns off GPU when not in use.
     # Experimental and only works on modern Nvidia GPUs (Turing or newer).
-    powerManagement.finegrained = false;
+    #powerManagement.finegrained = false;
 
     # Use the NVidia open source kernel module (not to be confused with the
     # independent third-party "nouveau" open source driver).
@@ -94,37 +94,37 @@
     # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus 
     # Only available from driver 515.43.04+
     # Currently alpha-quality/buggy, so false is currently the recommended setting.
-    open = false;
+    #open = false;
 
     # Enable the Nvidia settings menu,
 	# accessible via `nvidia-settings`.
-    nvidiaSettings = true;
+    #nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.production;
-  };
+    #package = config.boot.kernelPackages.nvidiaPackages.production;
+  #};
 
   # Linux Kernel
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Enabled Services
-  services.fstrim.enable = true;
+  #services.fstrim.enable = true;
 
   # Configure keymap in X11
-  services.xserver = {
-    xkb.layout = "us";
-    xkb.variant = "";
-    libinput.enable = true;
-  };
+  #services.xserver = {
+   # xkb.layout = "us";
+    #xkb.variant = "";
+    #libinput.enable = true;
+  #};
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
   # Enable autodiscovery of network printers
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-    openFirewall = true;
+  #services.avahi = {
+   # enable = true;
+    #nssmdns4 = true;
+    #openFirewall = true;
   };
   
   # Enable Scanner Support
@@ -133,21 +133,21 @@
   
 
   # Enable sound with pipewire.
-  sound.enable = true;
-  hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
+  #sound.enable = true;
+  #hardware.pulseaudio.enable = false;
+  #security.rtkit.enable = true;
+  #services.pipewire = {
+    #enable = true;
+    #alsa.enable = true;
+    #alsa.support32Bit = true;
+    #pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    jack.enable = true;
+    #jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
-  };
+  #};
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -178,15 +178,15 @@
 
 
   # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
+  #nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    git
-  ];
+  #environment.systemPackages = with pkgs; [
+    #vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #wget
+    #git
+  #];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
