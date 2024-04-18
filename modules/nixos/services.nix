@@ -23,7 +23,9 @@
       nssmdns4 = true;
       openFirewall = true;
     };
-    
+   
+    # Enable SSH
+    openssh.enable = true; 
 
     # Framework functionality
     #logind = {

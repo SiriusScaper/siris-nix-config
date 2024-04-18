@@ -15,7 +15,7 @@
   #boot.loader.systemd-boot.enable = true;
   #boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "FarScape-One"; # Define your hostname.
+#   networking.hostName = "FarScape-One"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -25,30 +25,30 @@
   # Enable networking
   #networking.networkmanager.enable = true;
   
-  # Disable SSH
-  services.openssh.enable = true;
+  # Enable SSH
+#   services.openssh.enable = true;
 
 
   # Set your time zone.
   #time.timeZone = "America/Los_Angeles";
 
   # Select internationalisation properties.
-  i18n.defaultLocale = "en_US.UTF-8";
+#   i18n.defaultLocale = "en_US.UTF-8";
+#
+#   i18n.extraLocaleSettings = {
+#     LC_ADDRESS = "en_US.UTF-8";
+#     LC_IDENTIFICATION = "en_US.UTF-8";
+#     LC_MEASUREMENT = "en_US.UTF-8";
+#     LC_MONETARY = "en_US.UTF-8";
+#     LC_NAME = "en_US.UTF-8";
+#     LC_NUMERIC = "en_US.UTF-8";
+#     LC_PAPER = "en_US.UTF-8";
+#     LC_TELEPHONE = "en_US.UTF-8";
+#     LC_TIME = "en_US.UTF-8";
+#   };
 
-  i18n.extraLocaleSettings = {
-    LC_ADDRESS = "en_US.UTF-8";
-    LC_IDENTIFICATION = "en_US.UTF-8";
-    LC_MEASUREMENT = "en_US.UTF-8";
-    LC_MONETARY = "en_US.UTF-8";
-    LC_NAME = "en_US.UTF-8";
-    LC_NUMERIC = "en_US.UTF-8";
-    LC_PAPER = "en_US.UTF-8";
-    LC_TELEPHONE = "en_US.UTF-8";
-    LC_TIME = "en_US.UTF-8";
-  };
 
-
-  # Make Wayland the Default
+  # Set a Default DM
   services.xserver.displayManager.defaultSession = "plasma";
 
   # Enable the X11 windowing system.
@@ -118,7 +118,7 @@
   #};
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+#   services.printing.enable = true;
 
   # Enable autodiscovery of network printers
   #services.avahi = {
@@ -128,8 +128,8 @@
   };
   
   # Enable Scanner Support
-  hardware.sane.enable = true;
-  hardware.sane.extraBackends = [ pkgs.sane-airscan ];
+#   hardware.sane.enable = true;
+#   hardware.sane.extraBackends = [ pkgs.sane-airscan ];
   
 
   # Enable sound with pipewire.
@@ -156,17 +156,17 @@
   services.flatpak.enable = true;
    
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.sirius = {
-    isNormalUser = true;
-    description = "Ryan";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      firefox
-      floorp
-      skanlite
-    #  thunderbird
-    ];
-  };
+#   users.users.sirius = {
+#     isNormalUser = true;
+#     description = "Ryan";
+#     extraGroups = [ "networkmanager" "wheel" ];
+#     packages = with pkgs; [
+#       firefox
+#       floorp
+#       skanlite
+#     #  thunderbird
+#     ];
+#   };
 
   home-manager = {
     # also pass inputs to home-manager modules
@@ -213,6 +213,6 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
+  #system.stateVersion = "23.11"; # Did you read the comment?
   nix.settings.experimental-features = ["nix-command" "flakes"];
 }
