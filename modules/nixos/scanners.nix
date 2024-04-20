@@ -1,5 +1,4 @@
-{ pkgs, ... }
-
+{ pkgs, ... }:
 
 {
   # Enable Scanner Support
