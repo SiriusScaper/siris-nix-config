@@ -25,6 +25,8 @@
     wget
     git
     nh
+    nix-output-monitor
+    nvd
   ];
 
   time.timeZone = "America/Los_Angeles";
