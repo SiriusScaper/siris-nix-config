@@ -10,7 +10,7 @@
     ./nvidia.nix
     ./pipewire.nix
     ./program.nix
-    ./scanners.nix
+    ./printer.nix
     ./security.nix
     ./services.nix
     ./system.nix
