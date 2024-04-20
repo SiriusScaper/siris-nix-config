@@ -5,4 +5,5 @@
     driSupport = true;
     driSupport32Bit = true;
   };
+  hardware.enableRedistributableFirmware = true;
 }
