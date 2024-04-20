@@ -7,8 +7,8 @@
     extraSpecialArgs = { inherit inputs username host; };
     users.${username} = {
       imports = 
-        if (host == "desktop") then 
-          [ ./../home/default.desktop.nix ] 
+        if (host == "FarScape-One") then 
+          [ ./../home ] 
         else [ ./../home ];
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";

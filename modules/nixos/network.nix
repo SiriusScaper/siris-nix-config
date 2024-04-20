@@ -1,7 +1,7 @@
 { pkgs, ... }: 
 {
   networking = {
-    hostName = "desktop";
+    hostName = "FarScape-One";
     networkmanager.enable = true;
     nameservers = [ "1.1.1.1" ];
     #firewall = {
