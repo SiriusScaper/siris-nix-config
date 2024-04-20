@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ pkgs, config, lib, ... }:
 
 {
   # Load nvidia driver for Xorg and Wayland

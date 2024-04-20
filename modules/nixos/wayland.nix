@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, pkgs, config, lib, ... }:
 {
   #programs.hyprland.enable = true;
   xdg.portal = {

@@ -1,4 +1,4 @@
-{ pkgs, ... }: 
+{ pkgs, config, lib, ... }: 
 {
   networking = {
     hostName = "FarScape-One";
