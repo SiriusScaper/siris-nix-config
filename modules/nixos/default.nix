@@ -16,8 +16,7 @@
    import ./system.nix
    import ./user.nix
    import ./wayland.nix
-
+   #[ (import ./cloudflare-warp.nix) ]
+   #[ (import ./virtualization.nix) ];
   ];
-#        [ (import ./cloudflare-warp.nix) ]
-#        [ (import ./virtualization.nix) ];
 }
