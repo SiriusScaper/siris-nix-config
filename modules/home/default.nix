@@ -8,6 +8,7 @@
    ./chat/discord.nix           # discord
    ./floorp/floorp.nix            # firefox based browser
    ./gaming/steam.nix
+   ./gaming/gamemode.nix
    ./dev/git.nix
   # [(import ./gtk.nix)]
   # [(import ./hyprland)]
@@ -20,7 +21,6 @@
    ./qbittorrent/qbittorrent.nix
   # [(import ./scripts/scripts.nix)]           # personal scripts
    ./shell/starship.nix
-  # [(import ./swaylock.nix)]
   # [(import ./vscodium.nix)]
     ./terminals/warp.nix
   # [(import ./waybar)]
