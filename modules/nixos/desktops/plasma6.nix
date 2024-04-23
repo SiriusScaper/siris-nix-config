@@ -7,7 +7,7 @@
      layout = "us";
      variant = "";
     };
-    libunput.enable = true;
+    libinput.enable = true;
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;

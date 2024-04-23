@@ -50,11 +50,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
   outputs = { nixpkgs, self, ...} @ inputs:
   let
-    selfPkgs = import ./pkgs;
+#     selfPkgs = import ./pkgs;
     username = "sirius";
     system = "x86_64-linux";
     pkgs = import nixpkgs {
@@ -64,16 +66,18 @@
     lib = nixpkgs.lib;
   in
   {
-    overlays.default = selfPkgs.overlay;
+#     overlays.default = selfPkgs.overlay;
     nixosConfigurations = {
       FarScape-One = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/desktop) ];
         specialArgs = { host="FarScape-One"; inherit self inputs username ; };
       };
-      laptop = nixpkgs.lib.nixosSystem {
+      tardis = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [ (import ./hosts/laptop) ];
+        modules = [
+        (import ./hosts/laptop)
+        ];
         specialArgs = { host="laptop"; inherit self inputs username ; };
       };
     };

@@ -7,7 +7,7 @@
   # [(import ./cava.nix)]
    ./chat/discord.nix           # discord
    ./floorp/floorp.nix            # firefox based browser
-   ./gaming/gaming.nix
+   ./gaming/steam.nix
    ./dev/git.nix
   # [(import ./gtk.nix)]
   # [(import ./hyprland)]
@@ -16,7 +16,7 @@
   # [(import ./micro.nix)]                     # nano replacement
   # [(import ./nvim.nix)]
    ./obs-studio/obs-studio.nix
-   ./packages.nix
+   ./packages/packages.nix
    ./qbittorrent/qbittorrent.nix
   # [(import ./scripts/scripts.nix)]           # personal scripts
    ./shell/starship.nix
