@@ -5,7 +5,7 @@
     useUserPackages = true;
     useGlobalPkgs = true;
     extraSpecialArgs = { inherit inputs username host; };
-    users.${username} = {
+    users.sirius = {
       imports = 
         if (host == "FarScape-One") then 
           [ ./../home ] 
