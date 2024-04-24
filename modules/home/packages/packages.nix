@@ -32,10 +32,10 @@
 
     #bleachbit                         # cache cleaner
     cmatrix
-    partitionmanager                           # partition manager
+    partition-manager                  # partition manager
     ffmpeg
     imv                               # image viewer
-	  man-pages					            	  # extra man pages
+	  man-pages		      # extra man pages
     mpv                               # video player
     ncdu                              # disk space
     openssl
@@ -45,6 +45,6 @@
     unzip
     wget
     xdg-utils
-    inputs.alejandra.defaultPackage.${system}
+    #inputs.alejandra.defaultPackage.${system}
   ]);
 }
