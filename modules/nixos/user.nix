@@ -5,7 +5,7 @@
     useUserPackages = true;
     useGlobalPkgs = true;
     extraSpecialArgs = { inherit inputs username host; };
-    users.${username} = {
+    users.sirius = {
       imports = 
         if (host == "FarScape-One") then 
           [ ./../home ] 
@@ -17,7 +17,7 @@
     };
   };
 
-  users.users.${username} = {
+  users.users.sirius = {
     isNormalUser = true;
     description = "${username}";
     extraGroups = [ "networkmanager" "wheel" ];
