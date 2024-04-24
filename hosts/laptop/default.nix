@@ -14,7 +14,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./../../modules/nixos
+    ./../../modules/system
 #     nixos-hardware.nixosModules.framework-13-7040-amd
   ];
 }

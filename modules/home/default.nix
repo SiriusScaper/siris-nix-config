@@ -7,8 +7,6 @@
   # [(import ./cava.nix)]
    ./chat/discord.nix                           # discord
    ./floorp/floorp.nix                          # firefox based browser
-   ./gaming/steam.nix
-   ./gaming/gamemode.nix
    ./dev/git.nix
   # [(import ./gtk.nix)]
   # [(import ./hyprland)]

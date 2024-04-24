@@ -2,6 +2,8 @@
 
 {
   # Feral GameMode
-  environment.systemPackages = [ pkgs.gamemode ];
+  environment.systemPackages = [ 
+    pkgs.gamemode 
+  ];
   programs.gamemode.enable = true;
 }

@@ -3,7 +3,9 @@
   imports = [
     ./bootloader.nix
     ./desktops/plasma6.nix
-    ./flatpak.nix
+    ./apps/flatpak.nix
+    ./apps/gamemode.nix
+    ./apps/steam.nix
     ./hardware.nix
     #./xserver.nix
     ./network.nix
