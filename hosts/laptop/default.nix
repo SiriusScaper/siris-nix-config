@@ -17,7 +17,7 @@
     ./../../modules/system
 #     nixos-hardware.nixosModules.framework-13-7040-amd
   ];
-}
+
 #   environment.systemPackages = with pkgs; [
 #     acpi
 #     brightnessctl
@@ -25,10 +25,11 @@
 #     powertop
 #   ];
 #
-#   services = {
+   services = {
 #     # thermald.enable = true;
 #     # cpupower-gui.enable = true;
-#     power-profiles-daemon.enable = true;
+     power-profiles-daemon.enable = true;
+     fwupd.enable = true;
 #
 #     upower = {
 #       enable = true;
@@ -62,4 +63,4 @@
 #       ]
 #       ++ [pkgs.cpupower-gui];
 #   };
-# }
+ }
