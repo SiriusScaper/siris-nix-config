@@ -7,9 +7,7 @@
     extraSpecialArgs = { inherit inputs username host; };
     users.sirius = {
       imports = 
-        if (host == "FarScape-One") then 
-          [ ./../home ] 
-        else [ ./../home ];
+          [ ./../home ]; 
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "23.11";

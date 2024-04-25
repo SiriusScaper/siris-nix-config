@@ -78,7 +78,7 @@
         modules = [
         (import ./hosts/laptop)
         ];
-        specialArgs = { host="laptop"; inherit self inputs username ; };
+        specialArgs = { host="tardis"; inherit self inputs username ; };
       };
     };
   };
