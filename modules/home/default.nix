@@ -1,5 +1,6 @@
 {inputs, username, host, ...}: {
   imports = [
+   ./security/1password.nix
   # [(import ./aseprite/aseprite.nix)]         # pixel art editor
   # [(import ./audacious/audacious.nix)]       # music player
    ./shell/bat.nix
@@ -12,8 +13,8 @@
   # [(import ./hyprland)]
   # [(import ./kitty.nix)]
   # [(import ./mako.nix)]                      # notification deamon
-  # [(import ./micro.nix)]                     # nano replacement
-  # [(import ./nvim.nix)]
+   ./editors/micro.nix				       # nano replacement
+   ./editors/nvim.nix
    ./obs-studio/obs-studio.nix
    ./packages/packages.nix
    ./qbittorrent/qbittorrent.nix
