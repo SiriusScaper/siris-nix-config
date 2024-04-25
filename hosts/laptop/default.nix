@@ -30,6 +30,7 @@
 #     # cpupower-gui.enable = true;
      power-profiles-daemon.enable = true;
      fwupd.enable = true;
+   };
 #
 #     upower = {
 #       enable = true;
