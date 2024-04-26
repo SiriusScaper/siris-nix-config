@@ -1,7 +1,7 @@
 { pkgs, config, ...}:
 
 {
- programs.obs-studio = {
+ programs.kdeconnect = {
     enable = true;
  };
 }
