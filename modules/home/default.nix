@@ -6,7 +6,7 @@
    ./shell/bat.nix
    ./shell/btop.nix
   # [(import ./cava.nix)]
-   ./chat/discord.nix                           # discord
+  # ./chat/discord.nix                           # discord
    ./floorp/floorp.nix                          # firefox based browser
    ./dev/git.nix
   # [(import ./gtk.nix)]
