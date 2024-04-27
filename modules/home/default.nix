@@ -14,7 +14,7 @@
   # [(import ./kitty.nix)]
    ./kdeconnect/kdeconnect.nix
   # [(import ./mako.nix)]                      # notification deamon
-   ./editors/micro.nix				       # nano replacement
+   ./editors/micro.nix			       # nano replacement
    ./editors/nvim.nix
    ./obs-studio/obs-studio.nix
    ./packages/packages.nix

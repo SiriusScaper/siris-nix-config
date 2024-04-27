@@ -1,8 +1,4 @@
-{ pkgs, config, ...}:
-
+{ pkgs, ... }: 
 {
- services.kdeconnect = {
-    enable = true;
-    indicator.enable = true;
- };
+  home.packages = (with pkgs; [ kdeconnect-kde ]);
 }
