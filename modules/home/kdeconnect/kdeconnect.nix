@@ -1,7 +1,8 @@
 { pkgs, config, ...}:
 
 {
- programs.kdeconnect = {
+ services.kdeconnect = {
     enable = true;
+    indicator.enable = true;
  };
 }
