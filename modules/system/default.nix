@@ -6,6 +6,7 @@
     ./apps/flatpak.nix
     ./apps/gamemode.nix
     ./apps/steam.nix
+    ./apps/kdeconnect.nix
     ./hardware.nix
     #./xserver.nix
     ./network.nix
