@@ -4,5 +4,5 @@
     pkgs.kdePackages.kdeconnect-kde
   ];
 
-  programs.kdeconnect-kde.enable = true;
+  programs.kdeconnect.enable = true;
 }
