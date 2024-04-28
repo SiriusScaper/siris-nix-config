@@ -32,7 +32,7 @@
 
     #bleachbit                         # cache cleaner
     cmatrix
-    partition-manager                  # partition manager
+    #partition-manager                  # partition manager
     ffmpeg
     imv                               # image viewer
 	  man-pages		      # extra man pages
