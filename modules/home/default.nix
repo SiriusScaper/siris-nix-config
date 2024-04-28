@@ -28,6 +28,5 @@
   # [(import ./wofi/wofi.nix)]
    ./youtube-music/yt-music.nix
    ./shell/zsh.nix
-   ./tools/kde-partition.nix
   ];
 }

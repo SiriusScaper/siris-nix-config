@@ -7,6 +7,7 @@
     ./apps/gamemode.nix
     ./apps/steam.nix
     ./apps/kdeconnect.nix
+    ./apps/kde-partition.nix
     ./hardware.nix
     #./xserver.nix
     ./network.nix
