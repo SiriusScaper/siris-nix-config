@@ -28,6 +28,6 @@
   # [(import ./wofi/wofi.nix)]
    ./youtube-music/yt-music.nix
    ./shell/zsh.nix
-   ./tools/kdepartition.nix
+   ./tools/kde-partition.nix
   ];
 }
