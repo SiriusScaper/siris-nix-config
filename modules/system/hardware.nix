@@ -5,5 +5,11 @@
     driSupport = true;
     driSupport32Bit = true;
   };
+
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  
   hardware.enableRedistributableFirmware = true;
 }
