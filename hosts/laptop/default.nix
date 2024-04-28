@@ -18,12 +18,13 @@
 #     nixos-hardware.nixosModules.framework-13-7040-amd
   ];
 
-#   environment.systemPackages = with pkgs; [
+   environment.systemPackages = with pkgs; [
+      fprintd
 #     acpi
 #     brightnessctl
 #     cpupower-gui
 #     powertop
-#   ];
+   ];
 #
    services = {
 #     # thermald.enable = true;
