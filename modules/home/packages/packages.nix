@@ -2,7 +2,7 @@
 {
   home.packages = (with pkgs; [
     eza                               # ls replacement
-    #entr                              # perform action when file change
+    #entr                             # perform action when file change
     fd                                # find replacement
     file                              # Show file information 
     fzf                               # fuzzy finder
@@ -12,15 +12,16 @@
     jdk17                             # java
     lazygit
     libreoffice
-    #cinnamon.nemo-with-extensions     # file manager
+    #cinnamon.nemo-with-extensions    # file manager
     nitch                             # systhem fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
-    #ripgrep                           # grep replacement
+    #ripgrep                          # grep replacement
+    piper
     soundwireserver                   # pass audio to android phone
     todo                              # cli todo list
     toipe                             # typing test in the terminal
-    #valgrind                          # c memory analyzer
+    #valgrind                         # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl
     gnome.zenity
@@ -30,18 +31,18 @@
     # Python
     python3
 
-    #bleachbit                         # cache cleaner
+    #bleachbit                        # cache cleaner
     cmatrix
-    #partition-manager                  # partition manager
+    #partition-manager                # partition manager
     ffmpeg
     imv                               # image viewer
-	  man-pages		      # extra man pages
+    man-pages		              # extra man pages
     mpv                               # video player
     ncdu                              # disk space
     openssl
     pavucontrol                       # pulseaudio volume controle (GUI)
     playerctl                         # controller for media players
-    #qalculate-gtk                     # calculator
+    #qalculate-gtk                    # calculator
     unzip
     wget
     xdg-utils
