@@ -8,7 +8,7 @@
    ./shell/btop.nix
   # [(import ./cava.nix)]
   # ./chat/discord.nix                         # discord
-   ./browsers/floorp.nix                       # firefox based browser
+  # ./browsers/floorp.nix                       # firefox based browser
    ./browsers/librewolf.nix
    ./dev/git.nix
   # [(import ./gtk.nix)]
