@@ -1,4 +1,4 @@
 { pkgs, ... }: 
 {
-  home.packages = (with pkgs; [ floorp-unwrapped ]);
+  home.packages = (with pkgs; [ floorp ]);
 }
