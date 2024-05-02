@@ -13,8 +13,7 @@
     lazygit
     libreoffice
     #cinnamon.nemo-with-extensions    # file manager
-    nitch                             # system fetch util
-    fastfetch
+    fastfetch                         # system fetch util
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
     #ripgrep                          # grep replacement
