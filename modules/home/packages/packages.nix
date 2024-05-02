@@ -13,10 +13,12 @@
     lazygit
     libreoffice
     #cinnamon.nemo-with-extensions    # file manager
-    nitch                             # systhem fetch util
+    nitch                             # system fetch util
+    fastfetch
     nix-prefetch-github
     prismlauncher                     # minecraft launcher
     #ripgrep                          # grep replacement
+    libratbag
     piper
     soundwireserver                   # pass audio to android phone
     todo                              # cli todo list
