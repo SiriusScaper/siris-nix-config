@@ -8,6 +8,8 @@
     ./apps/steam.nix
     ./apps/kdeconnect.nix
     ./apps/kde-partition.nix
+    ./apps/lutris.nix
+    ./apps/bottles.nix
     ./hardware.nix
     #./xserver.nix
     ./network.nix

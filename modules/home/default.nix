@@ -18,6 +18,7 @@
    ./editors/micro.nix			       # nano replacement
    ./editors/nvim.nix
    ./gaming/heroic-launcher.nix
+   ./gaming/protonup.nix
    ./obs-studio/obs-studio.nix
    ./packages/packages.nix
    ./qbittorrent/qbittorrent.nix
