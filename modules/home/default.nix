@@ -13,7 +13,6 @@
    ./dev/git.nix
   # [(import ./gtk.nix)]
   # [(import ./hyprland)]
-  # [(import ./kitty.nix)]
   # [(import ./mako.nix)]                      # notification deamon
    ./editors/micro.nix			       # nano replacement
    ./editors/nvim.nix
@@ -26,6 +25,7 @@
    ./shell/starship.nix
   # [(import ./vscodium.nix)]
     ./terminals/warp.nix
+    ./terminals/alacritty.nix
   # [(import ./waybar)]
   # [(import ./wofi/wofi.nix)]
    ./youtube-music/yt-music.nix
