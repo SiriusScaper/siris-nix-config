@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "uas" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
@@ -21,6 +21,12 @@
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/EA00-8C89";
       fsType = "vfat";
+      options = [ "fmask=0022" "dmask=0022" ];
+    };
+
+  fileSystems."/home/sirius/Games" =
+    { device = "/dev/disk/by-uuid/ae3acb0e-379e-48d5-afa1-6ff3aabcca35";
+      fsType = "ext4";
     };
 
   swapDevices =
