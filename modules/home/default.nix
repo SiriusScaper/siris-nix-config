@@ -19,6 +19,7 @@
    ./editors/nvim.nix
    ./gaming/heroic-launcher.nix
    ./gaming/protonup.nix
+   ./gaming/protontricks.nix
    ./obs-studio/obs-studio.nix
    ./packages/packages.nix
    ./qbittorrent/qbittorrent.nix
