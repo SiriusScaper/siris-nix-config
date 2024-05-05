@@ -1,19 +1,16 @@
 { pkgs, config, ... }:
 
 {
-  services.xserver = {
+  services.desktopManager = {
+    plasma6.enable = true;
+   };
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "";
+   };
+  services.libinput.enable = true;
+  services.displayManager.sddm = {
     enable = true;
-    xkb = {
-     layout = "us";
-     variant = "";
+    wayland.enable = true;
     };
-    libinput.enable = true;
-    displayManager.sddm = {
-      enable = true;
-      wayland.enable = true;
-    };
-    desktopManager.plasma6 = {
-      enable = true;
-    };
-  };
 }
