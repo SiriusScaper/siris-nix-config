@@ -80,9 +80,7 @@
       };
       tardis = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [
-        (import ./hosts/laptop)
-        ];
+        modules = [ (import ./hosts/laptop) ];
         specialArgs = { host="tardis"; inherit self inputs username ; };
       };
     };
