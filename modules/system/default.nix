@@ -4,6 +4,7 @@
     ./bootloader.nix
     ./desktops/plasma6.nix
     ./apps/flatpak.nix
+    ./apps/fix-electron.nix
     ./apps/gamemode.nix
     ./apps/steam.nix
     ./apps/kdeconnect.nix
