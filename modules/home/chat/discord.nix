@@ -1,4 +1,4 @@
 { pkgs, ...}:
 {
-  home.packages = (with pkgs; [ discord, betterdiscord-installer ]);
+  home.packages = (with pkgs; [  betterdiscord-installer ], [ discord ]);
 }
