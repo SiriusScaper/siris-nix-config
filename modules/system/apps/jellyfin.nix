@@ -5,13 +5,9 @@
 
   services.caddy = {
       enable = true;
-      virtualHosts = { 
+      #virtualHosts = { 
         
-
-
-      }
+      #};
     };
-
-  };
 }
 
