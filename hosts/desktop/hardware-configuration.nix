@@ -18,6 +18,11 @@
       fsType = "ext4";
     };
 
+  fileSystems."/home/sirius/Media" =
+    { device = "/dev/disk/by-uuid/51871486-5d04-4d93-9456-28b254c2d4f9";
+      fsType = "ext4";
+    };
+
   fileSystems."/home/sirius/Games" =
     { device = "/dev/disk/by-uuid/ae3acb0e-379e-48d5-afa1-6ff3aabcca35";
       fsType = "ext4";
@@ -29,8 +34,8 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/home/sirius/Media" =
-    { device = "/dev/disk/by-uuid/51871486-5d04-4d93-9456-28b254c2d4f9";
+  fileSystems."/home/sirius/Projects-Media" =
+    { device = "/dev/disk/by-uuid/bcf35cad-c5c1-4e40-a835-bf1621ebdc14";
       fsType = "ext4";
     };
 
