@@ -18,14 +18,24 @@
       fsType = "ext4";
     };
 
+  fileSystems."/home/sirius/Games" =
+    { device = "/dev/disk/by-uuid/ae3acb0e-379e-48d5-afa1-6ff3aabcca35";
+      fsType = "ext4";
+    };
+
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/EA00-8C89";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/home/sirius/Games" =
-    { device = "/dev/disk/by-uuid/ae3acb0e-379e-48d5-afa1-6ff3aabcca35";
+  fileSystems."/root/.cache/doc" =
+    { device = "portal";
+      fsType = "fuse.portal";
+    };
+
+  fileSystems."/home/sirius/Media" =
+    { device = "/dev/disk/by-uuid/51871486-5d04-4d93-9456-28b254c2d4f9";
       fsType = "ext4";
     };
 
@@ -40,6 +50,8 @@
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp7s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp8s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.ipv6leakintrf0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.tun0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp6s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
