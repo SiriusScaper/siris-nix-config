@@ -8,7 +8,7 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "uas" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
@@ -29,11 +29,6 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/root/.cache/doc" =
-    { device = "portal";
-      fsType = "fuse.portal";
-    };
-
   fileSystems."/home/sirius/Media" =
     { device = "/dev/disk/by-uuid/51871486-5d04-4d93-9456-28b254c2d4f9";
       fsType = "ext4";
@@ -50,8 +45,6 @@
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp7s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp8s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.ipv6leakintrf0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.tun0.useDHCP = lib.mkDefault true;
   # networking.interfaces.wlp6s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
