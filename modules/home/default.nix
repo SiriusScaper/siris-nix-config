@@ -17,6 +17,7 @@
   # [(import ./hyprland)]
   # [(import ./mako.nix)]                      # notification deamon
    ./editors/micro.nix			       # nano replacement
+   ./editors/lunarvim.nix
    ./editors/nvim.nix
    ./gaming/heroic-launcher.nix
    ./gaming/protonup.nix
