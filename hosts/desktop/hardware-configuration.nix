@@ -18,8 +18,8 @@
       fsType = "ext4";
     };
 
-  fileSystems."/home/sirius/Media" =
-    { device = "/dev/disk/by-uuid/51871486-5d04-4d93-9456-28b254c2d4f9";
+  fileSystems."/home/sirius/Projects-Media" =
+    { device = "/dev/disk/by-uuid/bcf35cad-c5c1-4e40-a835-bf1621ebdc14";
       fsType = "ext4";
     };
 
@@ -34,8 +34,13 @@
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/home/sirius/Projects-Media" =
-    { device = "/dev/disk/by-uuid/bcf35cad-c5c1-4e40-a835-bf1621ebdc14";
+  fileSystems."/home/sirius/Media" =
+    { device = "/dev/disk/by-uuid/51871486-5d04-4d93-9456-28b254c2d4f9";
+      fsType = "ext4";
+    };
+
+  fileSystems."/home/sirius/Storage1" =
+    { device = "/dev/disk/by-uuid/4530a645-2ab3-4d95-99da-92032526eb67";
       fsType = "ext4";
     };
 
