@@ -11,6 +11,7 @@
     ./apps/kde-partition.nix
     ./apps/lutris.nix
     ./apps/bottles.nix
+    ./apps/protonmail.nix
     ./hardware.nix
     #./xserver.nix
     ./network.nix
