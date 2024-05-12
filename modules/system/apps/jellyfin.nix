@@ -5,9 +5,11 @@
 
   services.caddy = {
       enable = true;
-      #virtualHosts = { 
-        
-      #};
+      virtualHosts = {
+         "https://my-jellyfin.nixos.com".extraConfig = ''
+           reverse_proxy 127.0.0.1:8096
+           '';
+      };
     };
 }
 
