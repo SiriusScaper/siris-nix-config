@@ -28,6 +28,8 @@
     nh
     nix-output-monitor
     nvd
+    rar2fs
+    unrar
   ];
 
   time.timeZone = "America/Los_Angeles";
