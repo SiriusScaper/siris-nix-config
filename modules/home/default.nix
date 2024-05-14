@@ -22,6 +22,7 @@
    ./gaming/heroic-launcher.nix
    ./gaming/protonup.nix
    ./gaming/protontricks.nix
+   ./gaming/steamtinkerlaunch.nix
    ./media/jellyfin.nix
    ./obs-studio/obs-studio.nix
    ./packages/packages.nix
