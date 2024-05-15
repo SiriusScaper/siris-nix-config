@@ -12,6 +12,7 @@
     ./apps/lutris.nix
     ./apps/bottles.nix
     ./apps/protonmail.nix
+    ./apps/zed-editor.nix
     ./hardware.nix
     #./xserver.nix
     ./network.nix
