@@ -8,7 +8,7 @@
 
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = true;
+  #  powerOnBoot = true;
   };
   
   hardware.enableRedistributableFirmware = true;
