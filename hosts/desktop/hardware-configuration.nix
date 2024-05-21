@@ -14,38 +14,18 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/57606c4d-76f9-4672-989a-167fa2002f73";
-      fsType = "ext4";
-    };
-
-  fileSystems."/home/sirius/Projects-Media" =
-    { device = "/dev/disk/by-uuid/bcf35cad-c5c1-4e40-a835-bf1621ebdc14";
-      fsType = "ext4";
-    };
-
-  fileSystems."/home/sirius/Games" =
-    { device = "/dev/disk/by-uuid/ae3acb0e-379e-48d5-afa1-6ff3aabcca35";
+    { device = "/dev/disk/by-uuid/29da4144-e154-491a-9929-4aa27edf1804";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/EA00-8C89";
+    { device = "/dev/disk/by-uuid/C9A9-F517";
       fsType = "vfat";
       options = [ "fmask=0022" "dmask=0022" ];
     };
 
-  fileSystems."/home/sirius/Media" =
-    { device = "/dev/disk/by-uuid/51871486-5d04-4d93-9456-28b254c2d4f9";
-      fsType = "ext4";
-    };
-
-  fileSystems."/home/sirius/Storage1" =
-    { device = "/dev/disk/by-uuid/4530a645-2ab3-4d95-99da-92032526eb67";
-      fsType = "ext4";
-    };
-
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/453a7b43-acb7-46db-9481-02d794b6a94b"; }
+    [ { device = "/dev/disk/by-uuid/9acdc730-bd33-4ff8-81fd-02fce8edd6c9"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
@@ -53,9 +33,9 @@
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
-  # networking.interfaces.enp7s0.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp8s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.wlp6s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.enp9s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.wlp7s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
