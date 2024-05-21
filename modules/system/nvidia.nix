@@ -7,7 +7,7 @@
   services.xserver.videoDrivers = ["nvidia"]; # or "nvidiaLegacy470 etc.
 
   hardware.nvidia = {
-    modesetting.enable = true;
+    modesetting.enable = false;
    powerManagement.enable = false;
    powerManagement.finegrained = false;
     open = false;
