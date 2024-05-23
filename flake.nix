@@ -68,7 +68,7 @@
       inherit system;
       config.allowUnfree = true;
     };
-   # lib = nixpkgs.lib;
+    lib = nixpkgs.lib;
   in
   {
 #     overlays.default = selfPkgs.overlay;
