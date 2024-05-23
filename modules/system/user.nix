@@ -5,9 +5,11 @@
     useUserPackages = true;
     useGlobalPkgs = true;
     extraSpecialArgs = { inherit inputs username host; };
-    users.sirius = {
+    users.${username} = {
       imports = 
-          [ ./../home ]; 
+        if (host == "FarScape-One") then
+          [./../home/default.nix]
+        else [ ./../home ]; 
       home.username = "${username}";
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "23.11";
