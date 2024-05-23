@@ -47,6 +47,6 @@
     unzip
     wget
     xdg-utils
-    #inputs.alejandra.defaultPackage.${system}
+    inputs.alejandra.defaultPackage.${system}
   ]);
 }
