@@ -73,12 +73,12 @@
   {
 #     overlays.default = selfPkgs.overlay;
     nixosConfigurations = {
-      FarScape-One = pkgs.lib.nixosSystem {
+      desktop = pkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/desktop) ];
         specialArgs = { host="FarScape-One"; inherit self inputs username ; };
       };
-      tardis = pkgs.lib.nixosSystem {
+      laptop = pkgs.lib.nixosSystem {
         inherit system;
         modules = [ (import ./hosts/laptop) ];
         specialArgs = { host="tardis"; inherit self inputs username ; };
