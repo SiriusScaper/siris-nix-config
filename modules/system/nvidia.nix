@@ -2,16 +2,16 @@
 
 {
 
-  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
+  boot.kernelParams = [ "nvidia_drm.fndev=1" ];
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = ["nvidia"]; # or "nvidiaLegacy470 etc.
 
   hardware.nvidia = {
-    modesetting.enable = false;
+    modesetting.enable = true;
    powerManagement.enable = false;
    powerManagement.finegrained = false;
     open = false;
     nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.production;
   };
 }
