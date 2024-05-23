@@ -9,11 +9,5 @@
   services.libinput.enable = true;
   services.xserver.enable = true;
   services.xserver.displayManager.sddm.enable = true;
-  services.displayManager.sddm = {
-    enable = true;
-    wayland = {
-      enable = true;
-      compositor = "kwin";
-    };
-  };
+  services.xserver.displayManager.sddm.wayland.enable = false;
 }
