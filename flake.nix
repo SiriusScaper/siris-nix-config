@@ -90,12 +90,12 @@
         inherit system;
         modules = [
         specialArgs = { host="tardis"; inherit self inputs username; };
-          {
+          #{
             nix.settings = {
               substituters = [ "https://cosmic.cachix.org/" ];
               trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
             };
-          }
+          #}
           (import ./hosts/laptop)
           nixos-cosmic.nixosModules.default
           #./configuration.nix
