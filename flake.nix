@@ -98,7 +98,7 @@
           }
           (import ./hosts/laptop)
           nixos-cosmic.nixosModules.default
-          ./configuration.nix
+          #./configuration.nix
         ];
       };
     };
