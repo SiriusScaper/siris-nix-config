@@ -89,7 +89,6 @@
       tardis = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-        specialArgs = { host="tardis"; inherit self inputs username; };
           #{
             nix.settings = {
               substituters = [ "https://cosmic.cachix.org/" ];
@@ -100,6 +99,7 @@
           nixos-cosmic.nixosModules.default
           #./configuration.nix
         ];
+        specialArgs = { host="tardis"; inherit self inputs username; };
       };
     };
   };
