@@ -72,17 +72,47 @@
   in
   {
 #     overlays.default = selfPkgs.overlay;
+   
+{
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    nixos-cosmic = {
+      url = "github:lilyinstarlight/nixos-cosmic";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
+
+  outputs = { self, nixpkgs, nixos-cosmic }: {
     nixosConfigurations = {
-       tardis = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [ (import ./hosts/desktop) ];
-        specialArgs = { host="FarScape-One"; inherit self inputs username ; };
-      };
-      FarScape-One = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [ (import ./hosts/laptop) ];
-        specialArgs = { host="tardis"; inherit self inputs username ; };
+      # NOTE: change "host" to your system's hostname
+      tardis = nixpkgs.lib.nixosSystem {
+        modules = [
+          {
+            nix.settings = {
+              substituters = [ "https://cosmic.cachix.org/" ];
+              trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+            };
+          }
+          (import ./hosts/laptop)
+          nixos-cosmic.nixosModules.default
+          ./configuration.nix
+        ];
       };
     };
   };
 }
+   #nixosConfigurations = {
+    #   tardis = nixpkgs.lib.nixosSystem {
+     #   inherit system;
+      #  modules = [ (import ./hosts/desktop) ];
+       # specialArgs = { host="FarScape-One"; inherit self inputs username ; };
+     # };
+     # FarScape-One = nixpkgs.lib.nixosSystem {
+      #  inherit system;
+       # modules = [ (import ./hosts/laptop) ];
+        #specialArgs = { host="tardis"; inherit self inputs username ; };
+     # };
+   # };
+ # };
+#}

@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ sekf, nixpkgs, nixos-cosmic, pkgs, config, ... }:
 
 {
   services = {
