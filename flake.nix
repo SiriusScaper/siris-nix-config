@@ -87,7 +87,9 @@
     nixosConfigurations = {
       # NOTE: change "host" to your system's hostname
       tardis = nixpkgs.lib.nixosSystem {
+        inherit system;
         modules = [
+        specialArgs = { host="tardis"; inherit self inputs username; };
           {
             nix.settings = {
               substituters = [ "https://cosmic.cachix.org/" ];
@@ -115,4 +117,4 @@
      # };
    # };
  # };
-#}
+#};
