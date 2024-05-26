@@ -59,7 +59,7 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
 
-  outputs = { nixpkgs, self, ...} @ inputs:
+  outputs = { nixpkgs, self, nixos-cosmic, ...} @ inputs:
   let
 #     selfPkgs = import ./pkgs;
     username = "sirius";
@@ -74,16 +74,16 @@
 #     overlays.default = selfPkgs.overlay;
    
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+#  inputs = {
+ #   nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    nixos-cosmic = {
-      url = "github:lilyinstarlight/nixos-cosmic";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-  };
+  #  nixos-cosmic = {
+   #   url = "github:lilyinstarlight/nixos-cosmic";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
+  #};
 
-  outputs = { self, nixpkgs, nixos-cosmic }: {
+  #outputs = { self, nixpkgs, nixos-cosmic }: {
     nixosConfigurations = {
       # NOTE: change "host" to your system's hostname
       tardis = nixpkgs.lib.nixosSystem {
