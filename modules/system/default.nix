@@ -2,13 +2,13 @@
 {
   imports = [
     ./bootloader.nix
-    ./desktops/plasma6.nix
+    ./desktops/cosmic.nix.nix
     ./apps/flatpak.nix
     ./apps/fix-electron.nix
     ./apps/gamemode.nix
     ./apps/steam.nix
-    ./apps/kdeconnect.nix
-    ./apps/kde-partition.nix
+    #./apps/kdeconnect.nix
+    #./apps/kde-partition.nix
     ./apps/lutris.nix
     ./apps/bottles.nix
     ./apps/protonmail.nix
