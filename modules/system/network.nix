@@ -1,7 +1,7 @@
 { pkgs, config, lib, ... }: 
 {
   networking = {
-    hostName = "FarScape-One";
+    hostName = "tardis";
     networkmanager.enable = true;
     #nameservers = [ "1.1.1.1" ];
     firewall = {
