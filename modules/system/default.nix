@@ -2,7 +2,7 @@
 {
   imports = [
     ./bootloader.nix
-    ./desktops/cosmic.nix.nix
+    ./desktops/cosmic.nix
     ./apps/flatpak.nix
     ./apps/fix-electron.nix
     ./apps/gamemode.nix
