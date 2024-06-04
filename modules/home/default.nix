@@ -11,6 +11,7 @@
    ./chat/betterdiscordctl.nix
    ./browsers/floorp.nix                       # firefox based browser
    ./browsers/librewolf.nix
+   ./browsers/chromium.nix
    ./dev/git.nix
    ./dev/vscode-fhs.nix
   # [(import ./gtk.nix)]
