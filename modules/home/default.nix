@@ -38,5 +38,6 @@
    ./youtube-music/yt-music.nix
    ./shell/zsh.nix
    ./tools/celeste.nix
+   ./tools/p7zip.nix
   ];
 }
