@@ -2,6 +2,6 @@
 
 {
   environment.systemPackages = [
-    pkgs.nexusmods-app-unfree
+    pkgs.nexusmods-app
   ];
 }
