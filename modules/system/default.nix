@@ -11,7 +11,7 @@
     ./apps/kde-partition.nix
     ./apps/lutris.nix
     ./apps/bottles.nix
-    #./apps/nexusmods-app.nix
+    ./apps/nexusmods-app.nix
     ./apps/protonmail.nix
     ./apps/zed-editor.nix
     ./hardware.nix
