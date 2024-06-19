@@ -2,6 +2,6 @@
 
 {
   environment.systemPackages = [
-    pkgs.protonmail-desktop
+    pkgs.proton-pass
       ];
 }
