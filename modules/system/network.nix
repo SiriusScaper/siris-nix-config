@@ -2,7 +2,7 @@
 {
   networking.wireless = {
     enable = true;
-    hostName = "tardis";
+   # hostName = "tardis";
     userControlled.enable = true;
 
   #  networkmanager.enable = true;
