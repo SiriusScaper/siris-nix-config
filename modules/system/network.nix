@@ -1,6 +1,7 @@
 { pkgs, config, lib, ... }: 
 {
   networking = {
+    wireless.userControlled.enable = true;
     hostName = "tardis";
     networkmanager.enable = true;
     #nameservers = [ "1.1.1.1" ];
