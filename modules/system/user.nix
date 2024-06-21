@@ -18,7 +18,7 @@
   users.users.sirius = {
     isNormalUser = true;
     description = "${username}";
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
   nix.settings.allowed-users = [ "${username}" ];
