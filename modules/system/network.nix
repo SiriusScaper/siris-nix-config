@@ -1,10 +1,10 @@
 { pkgs, config, lib, ... }: 
 {
   networking = {
-#    wireless.userControlled.enable = true;
+    wireless.userControlled.enable = true;
     wireless.enable = true;
     hostName = "tardis";
-    networkmanager.enable = true;
+  #  networkmanager.enable = true;
     #nameservers = [ "1.1.1.1" ];
     firewall = {
       enable = true;
