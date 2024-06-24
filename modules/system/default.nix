@@ -14,6 +14,7 @@
     ./apps/protonmail.nix
     ./apps/zed-editor.nix
     ./hardware.nix
+    ./fonts.nix
     #./xserver.nix
     ./network.nix
     #./nvidia.nix
