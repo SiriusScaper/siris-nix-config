@@ -28,7 +28,7 @@
     gnome.zenity
     winetricks
     wineWowPackages.wayland
-
+    notion-app-enhanced
     # Python
     python3
 
