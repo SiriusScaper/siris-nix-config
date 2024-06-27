@@ -1,6 +1,6 @@
 { inputs, pkgs, config, lib, ... }:
 {
-  #programs.hyprland.enable = true;
+  xdg.portal.config.common.default = [ "*" ];
   xdg.portal = {
     enable = true;
     wlr.enable = true;
