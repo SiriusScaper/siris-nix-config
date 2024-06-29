@@ -30,6 +30,7 @@
     nvd
     rar2fs
     unrar
+    fprintd
   ];
 
   time.timeZone = "America/Los_Angeles";
