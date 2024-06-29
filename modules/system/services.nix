@@ -36,5 +36,9 @@
       #powerKey = "suspend";
       #powerKeyLongPress = "reboot";
     #};
+    fprintd = {
+      enable = true;
+      tod.enable = true;
+    };
   };
 }
