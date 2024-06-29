@@ -31,7 +31,7 @@
     notion-app-enhanced
     # Python
     python3
-
+    gparted
     #bleachbit                        # cache cleaner
     cmatrix
     #partition-manager                # partition manager
