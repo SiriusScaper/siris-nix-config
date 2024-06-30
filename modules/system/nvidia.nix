@@ -1,9 +1,7 @@
 { pkgs, config, lib, ... }:
 
 {
-  hardware.opengl = {
-    enable = true;
-  };
+  #hardware.opengl.enable = true;
 
   boot.kernelParams = [ "nvidia-drm.modeset=1" "nvidia-drm.fbdev=1" ];
   # Load nvidia driver for Xorg and Wayland
