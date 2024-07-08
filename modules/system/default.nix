@@ -1,8 +1,23 @@
 { inputs, nixpkgs, self, username, host, ...}:
 {
   imports = [
+    # Bootloader
     ./bootloader.nix
+
+    # Desktop Environment
+    (if host == "FarScape-One" then
     ./desktops/plasma6.nix
+    else
+    ./desktops/cosmic.nix)
+
+    # Core System Configurations
+    ./hardware.nix
+    ./network.nix
+    ./nvidia.nix
+    ./sound.nix
+    ./system.nix
+
+    # Applications
     ./apps/flatpak.nix
     ./apps/fix-electron.nix
     ./apps/gamemode.nix
@@ -14,11 +29,8 @@
     ./apps/nexusmods-app.nix
     ./apps/protonmail.nix
     ./apps/zed-editor.nix
-    ./hardware.nix
+
     #./xserver.nix
-    ./network.nix
-    ./nvidia.nix
-    ./pipewire.nix
     ./program.nix
     ./printer.nix
     ./security.nix
@@ -26,7 +38,5 @@
     ./system.nix
     ./user.nix
     ./wayland.nix
-   #[ (import ./cloudflare-warp.nix) ]
-   #[ (import ./virtualization.nix) ];
   ];
 }

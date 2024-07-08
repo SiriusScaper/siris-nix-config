@@ -33,6 +33,21 @@
     _7zz
   ];
 
+
+  # Enable flatpaks
+  services.flatpak.enable = true;
+
+  systemd.services.flatpak-repo = {
+    wantedBy = [ "multi-user.target" ];
+    path = [ pkgs.flatpak ];
+    script = ''
+      flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    '';
+  };
+
+  # Might be unnecessary after explicit sync changes introduced in plasma 6.1 and kernel 6.10/Nvidia 555
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   time.timeZone = "America/Los_Angeles";
   i18n.defaultLocale = "en_US.UTF-8";
   nixpkgs.config.allowUnfree = true;
