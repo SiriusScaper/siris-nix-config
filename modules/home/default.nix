@@ -14,27 +14,32 @@
    ./browsers/chromium.nix
    ./dev/git.nix
    ./dev/vscode-fhs.nix
-  # [(import ./gtk.nix)]
-  # [(import ./hyprland)]
-  # [(import ./mako.nix)]                      # notification deamon
+   
+   # Editors
    ./editors/micro.nix			       # nano replacement
    ./editors/lunarvim.nix
    ./editors/nvim.nix
+   ./editors/zed-editor.nix
+
+   # Gaming
    ./gaming/heroic-launcher.nix
    ./gaming/protonup.nix
    ./gaming/protontricks.nix
    ./gaming/steamtinkerlaunch.nix
+   ./gaming/nexusmods-app.nix
+   
+   
    ./media/jellyfin.nix
    ./obs-studio/obs-studio.nix
    ./packages/packages.nix
    ./qbittorrent/qbittorrent.nix
-  # [(import ./scripts/scripts.nix)]           # personal scripts
+
    ./shell/starship.nix
-  # [(import ./vscodium.nix)]
+
     ./terminals/warp.nix
     ./terminals/alacritty.nix
-  # [(import ./waybar)]
-  # [(import ./wofi/wofi.nix)]
+
+
    ./youtube-music/yt-music.nix
    ./shell/zsh.nix
    ./tools/celeste.nix

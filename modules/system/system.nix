@@ -31,6 +31,7 @@
     rar2fs
     unrar
     _7zz
+    proton-pass
   ];
 
 

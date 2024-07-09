@@ -25,10 +25,10 @@
     #valgrind                         # c memory analyzer
     yazi                              # terminal file manager
     youtube-dl
-    gnome.zenity
+    #gnome.zenity
     winetricks
     wineWowPackages.wayland
-
+    protonmail-desktop
     # Python
     python3
 
@@ -37,7 +37,7 @@
     #partition-manager                # partition manager
     ffmpeg
     imv                               # image viewer
-    man-pages		              # extra man pages
+    man-pages                         # extra man pages
     mpv                               # video player
     ncdu                              # disk space
     openssl
@@ -47,6 +47,7 @@
     unzip
     wget
     xdg-utils
+    pciutils
     inputs.alejandra.defaultPackage.${system}
   ]);
 }
