@@ -35,7 +35,16 @@
   ];
 
 
-  # Enable flatpaks
+   programs.zsh.enable = true;
+    programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+    # pinentryFlavor = "";
+  };
+
+  security.rtkit.enable = true;
+  #security.pam.services.swaylock = { };
+
   services.flatpak.enable = true;
 
   systemd.services.flatpak-repo = {
