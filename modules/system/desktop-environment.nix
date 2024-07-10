@@ -35,6 +35,7 @@
             modesetting.enable = true;
             # Uncomment if needed
             # powerManagement.enable = true;
+	    package = config.boot.kernelPackages.nvidiaPackages.beta;
           };
 
           # Wayland Configuration
