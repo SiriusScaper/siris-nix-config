@@ -24,7 +24,7 @@
     ./system.nix
     ./desktop-environment.nix
     #./xserver.nix
-    ./program.nix
+    #./program.nix
     ./printer.nix
     ./security.nix
     ./services.nix
