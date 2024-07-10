@@ -52,5 +52,5 @@
             "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.json";
 
           # Explicitly disable Xwayland
-          services.xserver.xwayland.enable = false;
+          services.xserver.enable = false;
         }
