@@ -24,7 +24,7 @@
             xserver.enable = true;
             displayManager.sddm.enable = true;
             videoDrivers = [ "nvidia" ];
-            desktopManager.plasma5.enable = false; # Explicitly disable Plasma 5
+            xserver.desktopManager.plasma5.enable = false; # Explicitly disable Plasma 5
             desktopManager.plasma6.enable = true; # Enable Plasma 6
 
             libinput.enable = true;
