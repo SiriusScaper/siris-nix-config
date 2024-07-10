@@ -12,11 +12,10 @@
 #   };
 # }
 
- outputs = { self, nixpkgs, home-manager, ... }: {
+{
     nixosConfigurations.my-machine = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        # ... (other modules)
 
         # NVIDIA and Wayland Configuration
         {
