@@ -23,7 +23,7 @@
           services = {
             xserver.enable = true;
             displayManager.sddm.enable = true;
-            videoDrivers = [ "nvidia" ];
+            xserver.videoDrivers = [ "nvidia" ];
             xserver.desktopManager.plasma5.enable = false; # Explicitly disable Plasma 5
             desktopManager.plasma6.enable = true; # Enable Plasma 6
 
