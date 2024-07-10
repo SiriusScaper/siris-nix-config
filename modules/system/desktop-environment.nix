@@ -13,10 +13,6 @@
 # }
 
 {
-    nixosConfigurations.my-machine = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      modules = [
-
         # NVIDIA and Wayland Configuration
         {
           # Enable early KMS start
