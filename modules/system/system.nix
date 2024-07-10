@@ -33,6 +33,7 @@
     _7zz
     proton-pass
     kdePackages.kdeconnect-kde
+    nexusmods-app
   ];
 
   #Enable Applications
