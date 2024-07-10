@@ -34,7 +34,6 @@
     proton-pass
     kdePackages.kdeconnect-kde
     nexusmods-app
-    floorp
   ];
 
   #Enable Applications
