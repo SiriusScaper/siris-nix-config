@@ -20,8 +20,8 @@
             "nvidia_drm.early_kms=1" # Enable early KMS start for potential smoother experience
           ];
 
-          services.xserver = {
-            enable = true;
+          services = {
+            xserver.enable = true;
             displayManager.sddm.enable = true;
             videoDrivers = [ "nvidia" ];
             desktopManager.plasma5.enable = false; # Explicitly disable Plasma 5
@@ -29,6 +29,7 @@
 
             libinput.enable = true;
           };
+
 
           hardware.nvidia = {
            # enable = true;
@@ -53,5 +54,4 @@
             "/run/opengl-driver/share/vulkan/icd.d/nvidia_icd.json";
 
           # Explicitly disable Xwayland
-          #services.xserver.enable = false;
         }
