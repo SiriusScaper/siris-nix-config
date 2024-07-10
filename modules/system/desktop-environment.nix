@@ -31,7 +31,7 @@
           };
 
           hardware.nvidia = {
-            enable = true;
+           # enable = true;
             modesetting.enable = true;
             # Uncomment if needed
             # powerManagement.enable = true;
