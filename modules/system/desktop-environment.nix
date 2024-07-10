@@ -12,7 +12,6 @@
 #   };
 # }
 
-{
         # NVIDIA and Wayland Configuration
         {
           # Enable early KMS start
@@ -55,6 +54,3 @@
           # Explicitly disable Xwayland
           services.xserver.xwayland.enable = false;
         }
-      ];
-    };
-  }
