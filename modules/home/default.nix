@@ -1,17 +1,24 @@
 {inputs, username, host, ...}: {
   imports = [
+
+   # Security
    ./security/1password.nix
    ./security/protonvpn.nix
+
   # [(import ./aseprite/aseprite.nix)]         # pixel art editor
   # [(import ./audacious/audacious.nix)]       # music player
-   ./shell/bat.nix
-   ./shell/btop.nix
   # [(import ./cava.nix)]
+
+   # Chat clients
    ./chat/discord.nix                         # discord
    ./chat/betterdiscordctl.nix
+
+   # Browsers
    ./browsers/floorp.nix                       # firefox based browser
    ./browsers/librewolf.nix
    ./browsers/chromium.nix
+
+   # Dev Tools
    ./dev/git.nix
    ./dev/vscode-fhs.nix
    
@@ -27,22 +34,30 @@
    ./gaming/protontricks.nix
    ./gaming/steamtinkerlaunch.nix
    ./gaming/nexusmods-app.nix
+   ./gaming/lutris.nix
    
-   
+   # Media
+   ./youtube-music/yt-music.nix
    ./media/jellyfin.nix
    ./obs-studio/obs-studio.nix
+
+   # Packages
    ./packages/packages.nix
-   ./qbittorrent/qbittorrent.nix
 
+   # Shell utils
    ./shell/starship.nix
+   ./shell/zsh.nix
+   ./shell/bat.nix
+   ./shell/btop.nix
 
+   # Terminals
     ./terminals/warp.nix
     ./terminals/alacritty.nix
 
-
-   ./youtube-music/yt-music.nix
-   ./shell/zsh.nix
+  # Tools/Utilities
    ./tools/celeste.nix
    ./tools/p7zip.nix
+   ./tools/bottles.nix
+   ./tools/qbittorrent.nix
   ];
 }
