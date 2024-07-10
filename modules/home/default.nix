@@ -37,9 +37,9 @@
    ./gaming/lutris.nix
    
    # Media
-   ./youtube-music/yt-music.nix
+   ./media/yt-music.nix
    ./media/jellyfin.nix
-   ./obs-studio/obs-studio.nix
+   ./media/obs-studio.nix
 
    # Packages
    ./packages/packages.nix
