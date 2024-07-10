@@ -32,7 +32,12 @@
     unrar
     _7zz
     proton-pass
+    kdePackages.kdeconnect-kde
   ];
+
+  #Enable Applications
+  programs.partition-manager.enable = true;
+  programs.kdeconnect.enable = true;
 
 
    programs.zsh.enable = true;
@@ -56,7 +61,7 @@
   };
 
   # Might be unnecessary after explicit sync changes introduced in plasma 6.1 and kernel 6.10/Nvidia 555
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  #nvironment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   time.timeZone = "America/Los_Angeles";
   i18n.defaultLocale = "en_US.UTF-8";
