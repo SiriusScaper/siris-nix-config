@@ -33,7 +33,6 @@
    ./gaming/protonup.nix
    ./gaming/protontricks.nix
    ./gaming/steamtinkerlaunch.nix
-   ./gaming/nexusmods-app.nix
    ./gaming/lutris.nix
    
    # Media
