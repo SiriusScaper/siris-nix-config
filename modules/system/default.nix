@@ -3,10 +3,10 @@
   imports = [
 
     # Desktop Environment
-    #(if host == "FarScape-One" then
-    #./desktops/plasma6.nix
-    #else
-    #./desktops/cosmic.nix)
+    (if host == "FarScape-One" then
+    ./desktops/desktop-environment.nix
+    else
+    ./desktops/cosmic.nix)
 
     # Applications
     ./apps/gamemode.nix
@@ -22,7 +22,7 @@
     #./nvidia.nix
     ./sound.nix
     ./system.nix
-    ./desktop-environment.nix
+    #./desktop-environment.nix
     #./xserver.nix
     #./program.nix
     #./printer.nix
