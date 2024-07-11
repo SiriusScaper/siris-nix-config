@@ -12,6 +12,7 @@
    # Chat clients
    ./chat/discord.nix                         # discord
    ./chat/betterdiscordctl.nix
+   ./chat/element.nix
 
    # Browsers
    ./browsers/floorp.nix                       # firefox based browser
