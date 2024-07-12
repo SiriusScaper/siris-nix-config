@@ -1,25 +1,25 @@
 {
   description = "Refactor NixOS Config - July 2024"
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nur.url = "github:nix-community/NUR";
+    inputs = {
+      nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+      nur.url = "github:nix-community/NUR";
 
-    alejandra.url = "github:kamadorueda/alejandra/3.0.0";
+      alejandra.url = "github:kamadorueda/alejandra/3.0.0";
 
-    nix-gaming.url = "github:fufexan/nix-gaming";
+      nix-gaming.url = "github:fufexan/nix-gaming";
     
-    nixos-cosmic = {
-      url = "github:lilyinstarlight/nixos-cosmic";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+      nixos-cosmic = {
+        url = "github:lilyinstarlight/nixos-cosmic";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
 
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+      home-manager = {
+        url = "github:nix-community/home-manager";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
 
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-  };
+      nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    };
 
   outputs = { nixpkgs, self, ...} @ inputs:
   let
