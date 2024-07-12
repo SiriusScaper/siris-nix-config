@@ -1,7 +1,9 @@
 {
   description = "Refactor NixOS Config - July 2024"
-    inputs = {
+    inputs={
+      
       nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+      
       nur.url = "github:nix-community/NUR";
 
       alejandra.url = "github:kamadorueda/alejandra/3.0.0";
