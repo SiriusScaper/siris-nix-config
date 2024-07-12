@@ -72,7 +72,16 @@
       };
       tardis = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [ (import ./hosts/laptop) ];
+        modules = [ 
+          {
+            nix.settings = {
+              substituters = [ "https://cosmic.cachix.org/" ];
+              trusted-public-keys = [];
+            }
+          };
+        (import ./hosts/laptop) 
+        nixos-cosmic.nixosModules.default
+        ];
         specialArgs = { host="tardis"; inherit self inputs username ; };
       };
     };
