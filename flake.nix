@@ -51,7 +51,7 @@
               trusted-public-keys = ["cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE="];
             };
           }
-        (import ./hosts/laptop); 
+        (import ./hosts/laptop) 
         nixos-cosmic.nixosModules.default
         ];
         specialArgs = { host="tardis"; inherit self inputs username; };
