@@ -1,6 +1,6 @@
 {
   description = "Refactor NixOS Config - July 2024"
-    inputs={
+    inputs ; = {
       
       nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
       
