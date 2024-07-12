@@ -3,9 +3,9 @@
   imports = [
 
     # Desktop Environment
-    if (host == "FarScape-One") then
-      [./desktop-environment.nix]
-    else [./desktops/cosmic.nix];
+    #if (host == "FarScape-One") then
+     # [./desktop-environment.nix]
+    #else [./desktops/cosmic.nix];
 
     # Applications
     ./apps/gamemode.nix
@@ -22,6 +22,7 @@
     ./sound.nix
     ./system.nix
     #./desktop-environment.nix
+    ./desktops/cosmic.nix
     #./xserver.nix
     #./program.nix
     #./printer.nix
