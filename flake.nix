@@ -1,5 +1,5 @@
 {
-  description - "Refactor NixOS Config - July 2024"
+  description = "Refactor NixOS Config - July 2024"
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nur.url = "github:nix-community/NUR";
