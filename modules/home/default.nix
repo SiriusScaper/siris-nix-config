@@ -15,7 +15,7 @@
    ./chat/element.nix
 
    # Browsers
-   #./browsers/floorp.nix                       # firefox based browser
+   ./browsers/floorp.nix                       # firefox based browser
    ./browsers/librewolf.nix
    ./browsers/chromium.nix
    ./browsers/firefox.nix
