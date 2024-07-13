@@ -18,7 +18,6 @@
           boot.kernelParams = [
             "nvidia-drm.modeset=1"
             "nvidia_drm.early_kms=1" # Enable early KMS start for potential smoother experience
-            "nvidia.NVreg_EnableGpuFirmware=0"
           ];
 
           services = {
