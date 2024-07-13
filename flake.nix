@@ -52,8 +52,7 @@
             };
           }
         (import ./hosts/laptop) 
-        nixos-cosmic.nixosModules.default
-        ];
+        nixos-cosmic.nixosModules.default];
         specialArgs = { host="tardis"; inherit self inputs username; };
       };
     };
