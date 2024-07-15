@@ -33,7 +33,7 @@
     _7zz
     proton-pass
     kdePackages.kdeconnect-kde
-    #nexusmods-app-unfree
+    nexusmods-app-unfree
   ];
 
   #Enable Applications
