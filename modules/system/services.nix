@@ -31,10 +31,10 @@
     openssh.enable = true; 
 
     # Framework functionality
-    #logind = {
-     # lidSwitch = "suspend";
-      #powerKey = "suspend";
-      #powerKeyLongPress = "reboot";
-    #};
+    logind = {
+      lidSwitch = "suspend";
+      powerKey = "suspend";
+      powerKeyLongPress = "reboot";
+    };
   };
 }
