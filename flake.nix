@@ -23,7 +23,7 @@
       nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     };
 
-  outputs = { nixpkgs, self, ...} @ inputs:
+  outputs = { nixpkgs, self, nixos-cosmic...} @ inputs:
   let
 #     selfPkgs = import ./pkgs;
     username = "sirius";
