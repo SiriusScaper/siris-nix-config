@@ -16,6 +16,8 @@
     # Bootloader
     ./bootloader.nix
 
+    ./fonts.nix
+
     # Core System Configurations
     ./hardware.nix
     ./network.nix
