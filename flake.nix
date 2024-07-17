@@ -37,11 +37,11 @@
   {
 #     overlays.default = selfPkgs.overlay;
     nixosConfigurations = {
-      FarScape-One = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [ (import ./hosts/desktop) ];
-        specialArgs = { host="FarScape-One"; inherit self inputs username ; };
-      };
+#      FarScape-One = nixpkgs.lib.nixosSystem {
+#        inherit system;
+#        modules = [ (import ./hosts/desktop) ];
+#        specialArgs = { host="FarScape-One"; inherit self inputs username ; };
+#      };
       tardis = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ 
@@ -52,8 +52,9 @@
             };
           }
         (import ./hosts/laptop) 
-        nixos-cosmic.nixosModules.default];
-        specialArgs = { host="tardis"; inherit self inputs username; };
+        nixos-cosmic.nixosModules.default
+        ];
+        specialArgs = { host="tardis"; inherit self inputs username ; };
       };
     };
   };
