@@ -22,7 +22,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    fira-code-nerdfont
     wget
     git
     nh
