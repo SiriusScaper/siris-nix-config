@@ -40,6 +40,7 @@
     man-pages                         # extra man pages
     mpv                               # video player
     ncdu                              # disk space
+    nvme-cli
     openssl
     pavucontrol                       # pulseaudio volume controle (GUI)
     playerctl                         # controller for media players
