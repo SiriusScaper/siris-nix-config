@@ -12,6 +12,7 @@
     #./apps/gamemode.nix
     ./apps/steam.nix
     ./apps/jellyfin.nix
+    ./apps/vulkan.nix
 
     # Bootloader
     ./bootloader.nix
