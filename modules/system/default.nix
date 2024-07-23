@@ -9,7 +9,7 @@
     #./desktops/cosmic.nix)
 
     # Applications
-    ./apps/gamemode.nix
+    #./apps/gamemode.nix
     ./apps/steam.nix
     ./apps/jellyfin.nix
 
