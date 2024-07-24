@@ -6,8 +6,8 @@
     # Devmon monitors for new storage devices. Udisks2 allows apps like Nautilus to query and manipulate
     # storage devices. Gnome-keyring enables apps to display an auth dialog when attempting to perform privileged operations,
     # like mounting another partition.
-    #devmon.enable = true;
-    #udisks2.enable = false;
+    devmon.enable = true;
+    udisks2.enable = true;
 
 
     # Trim SSD in the background, once every month.
