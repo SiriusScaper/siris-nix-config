@@ -19,6 +19,7 @@
    ./browsers/librewolf.nix
    ./browsers/chromium.nix
    ./browsers/firefox.nix
+   ./browsers/brave.nix
 
    # Dev Tools
    ./dev/git.nix
