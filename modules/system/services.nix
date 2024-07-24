@@ -7,7 +7,7 @@
     # storage devices. Gnome-keyring enables apps to display an auth dialog when attempting to perform privileged operations,
     # like mounting another partition.
     #devmon.enable = true;
-    udisks2.enable = true;
+    udisks2.enable = false;
 
 
     # Trim SSD in the background, once every month.
