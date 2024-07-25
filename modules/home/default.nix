@@ -42,6 +42,7 @@
    ./media/yt-music.nix
    ./media/jellyfin.nix
    ./media/obs-studio.nix
+   ./media/davinciresolvestudio.nix
 
    # Packages
    ./packages/packages.nix
